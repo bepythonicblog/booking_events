@@ -125,3 +125,6 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'authentication.User'
 
 LOGIN_URL = '/auth/login/'
+
+EMAIL_BACKEND = 'postmarker.django.EmailBackend'
+POSTMARK_TOKEN = '5428b773-584c-4a4a-bee0-c1b188598796'
