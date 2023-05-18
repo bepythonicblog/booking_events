@@ -1,0 +1,10 @@
+<!-- account/activation_email.html -->
+{% autoescape off %}
+  Hi {{ user.username }},
+
+  Please click on the following link to activate your account:
+
+  http://{{ domain }}{% url 'email-confirmation' username=user.username %}?uid={{ uid }}&token={{ token }}
+
+  Thanks!
+{% endautoescape %}

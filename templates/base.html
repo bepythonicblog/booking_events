@@ -1,0 +1,23 @@
+<!-- base/base.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Add your CSS and JavaScript links here -->
+</head>
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Default content here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
